@@ -1,0 +1,95 @@
+<?php
+
+$i = 1;
+
+while ( $i<= 10){
+  if ($i%2==1
+    echo "★";
+  } else {
+    echo $i
+  }
+ echo "★".$i;
+}
+
+?>
+
+<?php
+
+$i = 0;
+
+while ($i<=2) {
+  $i;
+  $i++;
+  echo $i."<br>";
+}
+
+?>
+
+<?php
+
+$i = 0;
+
+while ($i<=2) {
+  echo $i;
+  $i++;
+  echo "<br>";
+}
+
+?>
+
+<?php
+
+$a= array(10,15,20);
+
+foreach($a as $value){
+  echo $value;
+}
+
+?>
+
+
+<?php
+$arr= array("キー1"=> "値1","キー2"=>"値2","キー3"=>"値3");
+
+foreach($arr as $key => $val){
+  echo $key."-".$val."<br>";
+}
+
+
+?>
+
+<?php
+
+$arr = array(
+  "001"=> array("01"=> 100, "02"=> 150),
+  "002"=> array("01"=> 200, "02"=> 300)
+);
+
+foreach($arr as $key1 => $val1){
+  
+  echo $key1."<br>";
+  
+  foreach ($val1 as $key2 => $val2){
+    echo $key2."-".$val2."<br>";
+  }
+}
+
+
+?>
+
+<?php
+
+$arr =array(
+ "キー1"=> array("1-1"=> "値1","1-2" => "値2"),
+ "キー2"=> array("2-1"=> "値3","2-2" => "値4")
+);
+
+foreach ($arr as $key1 => $val1){
+  echo $key1."<br>";
+  
+  foreach($val1 as $key2 => $val2){
+    echo $key2."-".$val2."<br>";
+  }
+}
+
+?>

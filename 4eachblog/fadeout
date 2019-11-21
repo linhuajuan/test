@@ -1,0 +1,40 @@
+jQuery(function(){
+//ここにjQueryを書いていきます
+});
+
+$(function(){
+$("セレクタ").メソッド(引数);
+})
+
+
+<body>
+  <h1>こんにちは</h1>
+  <p>あいうえお</p>
+  <p>かきくけこ</p>
+  
+  <script src="script.js"></script>
+</body>
+
+$(function(){
+  $(".hello").css("color","green");
+});
+
+<body>
+  <h1>こんにちは</h1>
+  <div class="hello">Hello</div>
+  <div class="hi">hi</div>
+  
+  <script src="script.js"></script>
+
+</body>
+
+$(function(){
+  $(".hi").fadeOut();
+});
+→隠す
+$(funciton(){
+  $(".hell").text("HELLO")
+  });
+  →テキスト表示
+  
+  

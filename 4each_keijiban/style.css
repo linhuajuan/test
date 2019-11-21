@@ -1,0 +1,123 @@
+header{
+    width:100%;
+    height:60px;
+    background-color:black;
+    color:white;
+}
+
+header ul{
+    float:left;
+}
+
+header ul li{
+    float:left;
+    list-style:none;
+    padding-left:30px;
+    font-size:20px;
+}
+
+main{
+    width:100%;
+}
+
+.main_contents {
+    float:left;
+    left:10px;
+    width:60%;
+   
+}
+
+.main_contents h1{
+  border-left:4px solid black;
+  border-bottom:1px solid black; 
+  padding-left:5px;
+
+}
+
+form{
+background-color:#fbfbfb;
+border:3px #ebebeb solid;
+border-radius:10px;
+}
+
+form div{
+ padding:15px;
+}
+
+.title{
+margin-top:10px;
+margin-bottom:20px;
+border-left:4px red solid;
+padding-top:5px;
+padding-bottom:5px;
+padding-left:15px;
+font-size:20px;
+}
+
+.text,textarea{
+ border:1px solid #dfdfdf;
+ padding:5px;
+ color:#999;
+ background:#fff;
+}
+
+.submit{
+ border:1px solid lightgray;
+ padding:4px 10px;
+ color:white;
+ background-color:#bfbfbf;
+ border-radius:5px;
+ border-bottom:solid 2px gray;
+}
+
+.kiji{
+margin-top:10px;
+margin-bottom:20px;
+border-left:4px red solid;
+padding-top:5px;
+padding-bottom:5px;
+padding-left:15px;
+background-color:#fbfbfb;
+border:3px #ebebeb solid;
+border-radius:10px;
+
+}
+.kiji h3{
+ margin-top:5px;
+}
+.contents{
+border-top:1px solid #dfdfdf;
+padding:10px;
+}
+
+.main_side{
+ float:left;
+ width:35%;
+ margin-top:15px;
+ margin-left:50px;
+}
+
+.main_side h2{
+ border-bottom:1px dotted black; 
+}
+
+.main_side ul li{
+list-style:none;
+line-height:30px;
+margin-left:-10px;
+
+}
+
+
+footer{
+    clear:left;
+    text-align:center;
+    width:100%;
+    height:50px;
+    background-color:black;
+    color:white;
+}
+
+footer p{
+    line-height:50px;
+}

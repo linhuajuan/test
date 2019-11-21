@@ -1,0 +1,75 @@
+XAMPPとMYSQL
+データベースとは→さまざまな情報を保存しておく棚のようなモノ。
+
+リレーショナルデータベース
+データベースは、簡単に言うと、「高機能なexcel」Excelとは違い、データベースを使えば効率的な情報管理が可能です。
+現在、一般的にしようされているDatabaseは、列と行で構成される下記の様な表のような「RDB(リレーショナルデータベース）です。
+MySQLはオープンソース
+使用方法→レンタルサーバーを借りて、そのサーバー上でMySQLを使用する
+Linuxサーバーを自分のPCにインストールしてその上でMYSQLを使用する
+XAMPPを自分のPCにインストールしてその上でMySQLを使用する。
+
+データベース操作は、大きく4つに分かれCRUD（クラッド)と呼ばれる。
+create(insert文）
+→何らかの情報をテーブルに書き込む→facebook
+Read(select文）
+→テーブルにすでに入っている情報を呼び出す
+→すでに登録しているログイン情報など
+update(Update文）
+→テーブルに既に入っている何らかの情報を上書きする。
+Delete(delete文）
+→テーブルに既に入っている何らかの情報を削除する。
+facebookなど退会する際の情報削除
+
+create table addresslist(
+user_id int(11),
+name varchar(255),
+mail varchar(255),
+tell varchar(255),
+prefecture varchar(255)
+);
+varcharとは、このカラムに挿入するデータは、文字列にするという意味。
+初心者のうちはvarcharは、常に「255｣になる。
+
+insert into addresslist(user_id,name,mail,tell,prefecture)
+ values()
+ 
+ insert into drinklist values
+(1,"オレンジジュース",150,5),
+(2,"アップルジュース",130,4),
+(3,"ミネラルウォーター",80,7),
+(4,"コーラ",120,6);
+
+select * from drinklist;
+
+create table user_table(
+user_id int(11),
+name varchar(255),
+age int(11),
+tel varchar(255),
+mail varchar(255));
+
+desc user_table;
+
+insert into user_table values
+(1,"山田太郎",24,"090-1234-5678","yamada@gmail.com"),
+(2,"佐藤次郎",22,"090-2345-9999","sato@gmail.com"),
+(3,"鈴木花子",26,"080-7777-8888","suzuki@gmail.com");
+
+select*from user_table;
+
+
+insert into customer_data values
+(1,"山田太郎","y.taro@gmail.com","03-1511-3333"),
+(2,"佐藤花子","h.sato@yahoo.co.jp","090-7724-8842"),
+(3,"田中次郎","tziro@gmail.com","080-8824-4445");
+(4,"鈴木三郎","sabuszk@gmail.com","090-2224-8424");
+
+select * from customer_data;
+
+select* from customer_data where mail like "%@gmail.com%";
+
+update customer_data set tel ="03-0000-0000" where id=1; select * from customer_data;
+
+delete from customer_data where id=2;
+select*from customer_data;

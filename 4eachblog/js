@@ -1,0 +1,57 @@
+var week= ["月","火","水","木","金","土","日"];
+document.write(week[0]);
+
+var age= [20,42,13,85,34];
+delete age[3];
+document.write(age);
+
+var info={"名前":"山田太郎","住所":"東京都港区","性別":"男性"};
+document.write(info["名前"]);
+document.write(info.名前);
+
+var user01 = {id:"3324",name:"高橋"};
+
+document.write(user01.id);
+document.write(user01.name);
+
+var direction = ["東","西","南","北"];
+
+document.write(direction);
+
+
+var direction =["東","西","南","北"];
+
+direction[4] = "中央";
+
+document.write(direction);
+
+var age= [20,42,13,85,34];
+age.push(99);→後ろ追加
+document.write(age);
+
+var age= [20,42,13,85,34];
+age.unshift(1);
+document.write(age);
+
+var week= ["月","火","水","木","金"];
+
+week.unshift("日");→先頭追加
+week.unshift("土");
+
+document.write(week);
+
+var week= ["月","火","水","木","金"];
+
+week.shift();→先頭削除
+week.shift();
+
+document.write(week);
+
+var age= [20,42,13,85,34];
+age.pop();
+document.write(age);
+
+var animal= ["犬","猫","猿","鳥","熊"];
+document.write(animal.slice(2,4));
+
+＃関数とは、予め何らかの処理をまとめておくことで効率よくプログラミングをする手法。

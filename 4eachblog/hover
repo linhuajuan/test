@@ -1,0 +1,64 @@
+hover(ホバー)イベントとは
+mouseoverとmouseoutの2つを組み合わせたような処理ができるイベント
+
+
+$(function(){
+$("セレクタ").hover(function(){
+
+})
+})
+
+$(".button").hover(
+function(){
+  $(".button").css("background-color","#f44f12");
+},
+function(){
+  $(".button").css("background-color","#ff8f22");
+}
+);
+#2パターン、マウス乗せると表示
+
+$(".toroku").hover(
+  function(){
+   $(".toroku").css("border","solid 2px gray");  
+  },
+  function(){
+    $(".toroku").css("border","dotted 1px lightgray");
+   }
+);
+
+
+
+$(".button").hover(
+  function() {
+    $("img").fadeIn();
+  },
+  function() {
+    $("img").fadeOut();
+  }
+);
+→マウスを乗せた際にフェードイン、autoする。
+
+$(".moji").hover(
+  function() {
+    $(".moji").text("マウスを外すと色が変わります").css("color", "red");
+  },
+  function() {
+    $(".moji").text("マウスを乗せると色が変わります").css("color", "blue");
+  }
+);
+→マウスを乗せると色が変わります。
+
+<img src="/img/challenge/voice02.jpg" class="voice">
+→画像にクラスを聞かせるために、
+
+
+$(".voice").hover(
+  function() {
+    $(".voice").animate({width: "160px"})
+  },
+  function() {
+    $(".voice").animate({width: "120px"});
+  }
+);
+

@@ -1,0 +1,71 @@
+Q１
+<body>
+ <div class="area">
+   <h1>こんにちは</h1>
+   <div class="hello">Hello</div>
+   <div class="hi">hi</div>
+ </div>
+  
+  <script src="script.js"></script>
+</body>
+
+.area{
+  width:180px;
+  background-color:pink;
+  color:white;
+}
+
+$(function(){
+  $(".hello").click(function(){
+    $("h1").fadeOut();
+  });
+});
+#click：クリックした際に要素を消す
+
+<body>
+  <div class="toroku">登録はこちら</div>
+  
+  <script src="script.js"></script>
+</body>
+
+$(function(){
+  $(".toroku").mouseover(function(){
+    $(".toroku").css("border","solid 2px gray");
+  });
+});
+
+$(function(){
+  $(".button").mouseover(function(){
+    $(".button").css("background-color","dimgray");
+  });
+});
+
+.button{
+  border:1px solid gray;
+  background-color:darkgray;
+  height:60px;
+  width:150px;
+  text-align:center;
+  line-height:60px;
+  color:white;
+}
+
+
+<body>
+​
+  <img src="/img/challenge/voice01.jpg" class="voice01">
+  <img src="/img/challenge/voice02.jpg" class="voice02">
+​
+  <script src="script.js"></script>
+</body>
+
+img{
+  width: 120px;
+}
+
+$(function() {
+  $("voice01").click(function() {
+    $("voice02").fadeOut();
+  });
+});
+

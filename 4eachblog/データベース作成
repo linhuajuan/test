@@ -1,0 +1,55 @@
+select*from fruit_stock order by number asc;
+→小さい順に並ぶ
+
+select*from fruit_stock order by number desc;
+→大きい順に並ぶ
+
+select count(fruit)from fruit_stock;
+→集計fruit
+
+select count(fruit)from fruit stock where madein="アメリカ";
+
+select max(price) from fruit_stock;
+select avg(price) from fruit_stock;
+
+decimal→金額のデータ型としてよく利用する。
+(9,2)→扱う数値の桁数が全体的に９桁、小数点以下の桁数が2桁まで利用できるという意味。
+
+
+
+rename テーブル名を変更するオプション
+change カラムを変更する。
+modify データ型を変更するオプション
+add カラムを追加するオプション
+drop カラムを削除するオプション
+
+alter table sample01 rename sample02;
+show tables;
+
+desc sample02;
+alter table sample02 change id Number int;
+desc sample02;
+
+desc sample02;
+alter table sample02 change mail mailaddress varchar(255);
+desc sample02;
+
+desc sample02;
+alter table sample02 modify class varchar(255);
+desc sample02;
+
+desc sample02;
+alter table sample02 add age int;
+desc sample02;
+
+alter table sample02 drop class;
+desc sample02;
+
+alter table sample02 add age int(11);
+desc sample02;
+
+内部結合　inner join/join 
+外部結合　left outer join/left join
+右外部結合　Right outer join/right join
+
+select*from table_a inner join table_b on table_a.fruit_id=table_b.fruit_id;

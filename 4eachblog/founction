@@ -1,0 +1,75 @@
+＃関数とは、予め何らかの処理をまとめておくことで効率よくプログラミングをする手法。
+
+function welcome(){
+  return "ようこそ！";
+}
+
+document.write(welcome());
+
+
+function caution(){
+  return"必須項目が未入力です。";
+}
+
+document.write(caution());
+
+
+function welcome(name){
+  return "ようこそ!" + name + "さん。";  
+}
+document.write(welcome("田中"));
+
+
+function zeikomi(price){
+  return price * 1.08;
+}
+
+document.write(zeikomi(100));
+
+
+function myNameIs(name){
+  document.write("私の名前は"+name+"です<br>");
+}
+myNameIs("山田");
+myNameIs("佐藤");
+
+
+function hantei(age){
+  if (age < 18){
+    document.write("こどもです。");
+  }else{
+    document.write("大人です。");
+  }
+}
+hantei(20);
+
+function clock(time) {
+  return "ただいま" + time + "です。" ;
+}
+
+document.write(clock("13:30"));
+
+function totalPrice(price, tax = 1.08) {
+  return "合計金額は、" + price * tax + "円です。";
+}
+​
+document.write(totalPrice(100));
+document.write("<br>");
+document.write(totalPrice(200));
+
+
+
+function hello() {
+  document.write("こんにちは");
+}
+hello();
+
+function hantei(age) {
+  if (age >= 60) {
+    document.write("シルバー会員です。");
+  } else {
+    document.write("一般会員です。");
+  }
+}
+​
+hantei(30);
